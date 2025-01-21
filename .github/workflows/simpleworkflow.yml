@@ -7,12 +7,12 @@ jobs:
   a_simple_job:
    name: simplejob
    runs-on: ubuntu-latest
-  steps:
-      -name: name of my step
-      id: stepid
-      run: echo "this is the first step from the first job"
-      -name: step with another shell
-      id: shellstepid
-      shell: python
-      run:print(" this is using python shell")
+   steps:
+      - name: name of my step
+        id: stepid
+        run: echo "this is the first step from the first job"
+      - name: step with another shell
+        id: shellstepid
+        shell: python
+        run: print(" this is using python shell")
 
